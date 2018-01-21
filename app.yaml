@@ -1,0 +1,44 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /solar-meaipe
+  static_files: solar-meaipe/index.html
+  upload: solar-meaipe/index.html
+
+- url: /solar-meaipe/(.*)
+  static_files: solar-meaipe/\1
+  upload: solar-meaipe/(.*)
+
+
+- url: /lagoa-da-mata
+  static_files: lagoa-da-mata/index.html
+  upload: lagoa-da-mata/index.html
+
+- url: /lagoa-da-mata/(.*)
+  static_files: lagoa-da-mata/\1
+  upload: lagoa-da-mata/(.*)
+
+
+- url: /enseada-verde
+  static_files: enseada-verde/index.html
+  upload: enseada-verde/index.html
+
+- url: /enseada-verde/(.*)
+  static_files: enseada-verde/\1
+  upload: enseada-verde/(.*)
+
+
+- url: /pesque-pague-campestre
+  static_files: pesque-pague-campestre/index.html
+  upload: pesque-pague-campestre/index.html
+
+- url: /pesque-pague-campestre/(.*)
+  static_files: pesque-pague-campestre/\1
+  upload: pesque-pague-campestre/(.*)
+
+
+skip_files:
+- ^(frontend/.*)
+- ^(solarmeaipe/.*)
